@@ -1,0 +1,29 @@
+@import "../../sass/variables";
+
+.home {
+  margin: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.slogan {
+  margin: 3.2rem 0;
+}
+p {
+  margin-bottom: 3.2rem;
+}
+
+button {
+  background-color: $button-color;
+  border-radius: 6px;
+  border: 1px solid $button-color;
+  display: inline-block;
+  cursor: pointer;
+  color: $button-text;
+  font-size: 16px;
+  padding: 10px 40px;
+  text-decoration: none;
+}

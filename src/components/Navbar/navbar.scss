@@ -1,0 +1,77 @@
+@import "../../sass/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #184d47;
+  left: 0;
+  align-items: center;
+  backdrop-filter: blur(19px);
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  @include responsive(phone) {
+    padding: 0.5rem;
+  }
+}
+
+.nav ul {
+  display: flex;
+  @include responsive(phone) {
+    padding-top: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+    background-color: #fff;
+    width: 55%;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+}
+
+.nav .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.nav ul li {
+  padding: 0 1rem;
+  @include responsive(phone) {
+    padding: 1rem;
+  }
+}
+
+.nav ul li:last-child {
+  padding-right: 0;
+}
+
+.nav ul li a {
+  text-decoration: none !important;
+  color: #fff;
+  @include responsive(phone) {
+    color: #000;
+  }
+}
+
+.link-active {
+  border-bottom: 4px solid #f4d54b;
+}
