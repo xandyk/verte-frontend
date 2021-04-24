@@ -16,11 +16,14 @@ img {
 .slogan {
   margin: 3.2rem 0;
   font-size: $heading-font-size;
+  color: $dark-green;
 }
-p {
+.content {
+  padding-top: unset;
   line-height: 2.4rem;
   margin-bottom: 3.2rem;
   font-size: $default-font-size;
+  color: $dark-green;
 }
 
 button {
@@ -30,6 +33,6 @@ button {
   cursor: pointer;
   color: $button-text;
   font-size: 1rem;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   text-decoration: none;
 }

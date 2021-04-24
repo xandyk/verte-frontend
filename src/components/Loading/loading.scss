@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+
+// .loading-container {
+//   margin: 1.6rem;
+// }
+
+span {
+  display: relative;
+  right: 50px;
+  display: inline-block;
+}
+
+.heading {
+  margin: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+p {
+  margin-bottom: unset;
+  padding: 4.5rem 0 0;
+}
+
+.dot-group {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+}

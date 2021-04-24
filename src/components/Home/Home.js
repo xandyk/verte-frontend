@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home">
       <img src={Logo} alt="logo" />
       <h2 className="slogan">Keep it cool for safe living.</h2>
-      <p>
+      <p className="content">
         With Verte, you can gather the most updated news about global warming,
         participate in the local events, and get rewarded!
       </p>
