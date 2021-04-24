@@ -6,13 +6,15 @@ const loadingFour = () => {
   return (
     <section className="loading-container">
       <Link to="/loading4">
-        <span>Skip</span>
+        <span className="skip">Skip</span>
       </Link>
-      <img src={Reward} alt="reward pic" />
-      <p>
-        Ride a 🚲, plant a 🌳, share your stories, collect points & earn
-        rewards! Invite your family & friends to earn bigger offers!
-      </p>
+      <div className="heading">
+        <img src={Reward} alt="reward pic" />
+        <p className="text">
+          Ride a 🚲, plant a 🌳, share your stories, collect points & earn
+          rewards! Invite your family & friends to earn bigger offers!
+        </p>
+      </div>
 
       <div className="dot-group">
         <Link to="/loading1">
@@ -21,7 +23,7 @@ const loadingFour = () => {
         <Link to="/loading2">
           <div className="dot"></div>
         </Link>
-        <Link to="loading3">
+        <Link to="/loading3">
           <div className="dot"></div>
         </Link>
         <Link to="/loading4">

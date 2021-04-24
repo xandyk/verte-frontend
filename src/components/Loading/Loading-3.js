@@ -5,13 +5,17 @@ import Hands from "../../assets/img/hands.png"
 const loadingThree = () => {
   return (
     <section className="loading-container">
-      <Link to="signup">
-        <span>Skip</span>
+      <Link to="/signup">
+        <span className="skip">Skip</span>
       </Link>
-      <img src={Hands} alt="whale pic" />
-      <p>
-        We have only one planet to thrive. Let’s come together to make a change!
-      </p>
+
+      <div className="heading">
+        <img src={Hands} alt="hand pic" />
+        <p className="text">
+          We have only one planet to thrive. Let’s come together to make a
+          change!
+        </p>
+      </div>
 
       <div className="dot-group">
         <Link to="/loading1">
@@ -20,7 +24,7 @@ const loadingThree = () => {
         <Link to="/loading2">
           <div className="dot"></div>
         </Link>
-        <Link to="loading3">
+        <Link to="/loading3">
           <div className="dot active"></div>
         </Link>
         <Link to="/loading4">

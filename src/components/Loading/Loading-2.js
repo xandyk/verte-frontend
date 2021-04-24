@@ -6,11 +6,11 @@ const loadingTwo = () => {
   return (
     <section className="loading-container">
       <Link to="/signup">
-        <span>Skip</span>
+        <span className="skip">Skip</span>
       </Link>
       <div className="heading">
         <img src={Earth} alt="earth pic" />
-        <p>
+        <p className="text">
           Whales are thinning out because of lack of food due to increasing
           temperatures!
         </p>
@@ -23,7 +23,7 @@ const loadingTwo = () => {
         <Link to="/loading2">
           <div className="dot active"></div>
         </Link>
-        <Link to="loading3">
+        <Link to="/loading3">
           <div className="dot"></div>
         </Link>
         <Link to="/loading4">
