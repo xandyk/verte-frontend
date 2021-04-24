@@ -1,0 +1,22 @@
+@import "../../sass/variables";
+
+.news__container {
+  max-width: 512px;
+  margin: 0 auto;
+}
+.app-card {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 3rem 0;
+  background-color: #fff;
+  @include responsive(phone) {
+    margin: 3rem 0.7rem;
+  }
+}
+
+.app-card .details {
+  padding: 1rem;
+}
+
+.app-card img {
+  width: 100%;
+}
